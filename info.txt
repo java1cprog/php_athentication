@@ -1,0 +1,22 @@
+PHP Authentication
+
+https://github.com/slimphp/Slim
+https://github.com/slimphp/Slim-Views
+https://github.com/twigphp/Twig
+https://github.com/PHPMailer/PHPMailer
+https://github.com/hassankhan/config
+https://github.com/illuminate/database
+https://github.com/alexgarrett/violin
+https://github.com/ircmaxell/RandomLib
+
+composer require slim/slim
+composer.phar require slim/slim
+composer require slim/views
+composer require twig/twig
+composer require phpmailer/phpmailer
+composer require hassankhan/config
+composer require illuminate/database
+composer require alexgarrett/violin
+composer require ircmaxell/random-lib
+
+composer update
