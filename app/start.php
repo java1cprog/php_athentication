@@ -1,5 +1,7 @@
 <?php
 
+use Slim\App;
+
 session_cache_limiter(false);
 session_start();
 
@@ -9,4 +11,8 @@ define('INC_ROOT', dirname(__DIR__));
 
 require INC_ROOT . '/vendor/autoload.php';
 
-$app = new Slim();
+$app = new App();
+
+$app->get('/test/{name}', function ($request, $response, $args) {
+    return $response->getBody()->write('Hello, ' . $args['name']);
+});
