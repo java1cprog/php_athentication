@@ -20,3 +20,18 @@ composer require alexgarrett/violin
 composer require ircmaxell/random-lib
 
 composer update
+
+
+users
+id  INT 11
+username  VARCHAR 20
+first_name  VARCHAR 50
+last_name VARCHAR 50
+password  VARCHAR 255
+active  TINYINT 1
+active_hash VARCHAR 255
+recover_hash  VARCHAR 255
+remember_identifier VARCHAR 255
+remember_token  VARCHAR 255
+created_at  TIMESTAMP CURRENT...
+updated_at  TIMESTAMP NULL
